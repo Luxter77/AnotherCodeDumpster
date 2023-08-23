@@ -12,12 +12,14 @@ The code leverages TensorFlow and Keras to construct a powerful architecture for
 
 A set of utility functions is provided for fundamental tasks:
 
-- `get_angles`: Computes positional encoding angle rates.
-- `create_padding_mask`: Generates a padding mask to identify padded positions.
-- `create_look_ahead_mask`: Constructs a look-ahead mask to prevent attending to future positions.
-- `scaled_dot_product_attention`: Implements scaled dot-product attention.
-- `positional_encoding`: Generates positional encodings using sinusoidal functions.
-- `point_wise_feed_forward_network`: Defines a feed-forward neural network.
+| key | value |
+| --- | --- |
+| `get_angles` | Computes positional encoding angle rates. |
+| `create_padding_mask` | Generates a padding mask to identify padded positions. |
+| `create_look_ahead_mask` | Constructs a look-ahead mask to prevent attending to future positions. |
+| `scaled_dot_product_attention` | Implements scaled dot-product attention. |
+| `positional_encoding` | Generates positional encodings using sinusoidal functions. |
+| `point_wise_feed_forward_network` | Defines a feed-forward neural network. |
 
 ### Multi-Head Attention
 
