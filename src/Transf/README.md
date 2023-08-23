@@ -2,13 +2,11 @@
 
 ## Introduction
 
-This comprehensive documentation offers a detailed exploration of the provided Python code implementing a Transformer model for sequence-to-sequence tasks. The code leverages TensorFlow and Keras to construct a powerful architecture for natural language processing tasks. By examining the key components and design choices, you can gain a deep understanding of the Transformer's inner workings.
+This comprehensive documentation offers a detailed exploration of the provided Python code implementing a Transformer model for sequence-to-sequence tasks.
+
+The code leverages TensorFlow and Keras to construct a powerful architecture for natural language processing tasks.
 
 ## Code Overview
-
-### Importing Libraries and Setting GPU Visibility
-
-The code initiates with necessary library imports, including TensorFlow modules. It also allows GPU visibility to be controlled, aiding in performance optimization.
 
 ### Utility Functions
 
@@ -43,7 +41,9 @@ The `Transformer` class integrates the encoder and decoder, and a final dense la
 
 ### Positional Encoding
 
-The model leverages positional encoding to convey position information to the Transformer. The `positional_encoding` function generates encoding vectors using sine and cosine functions.
+The model leverages positional encoding to convey position information to the Transformer.
+
+The `positional_encoding` function generates encoding vectors using sine and cosine functions.
 
 ### About Multi-Head Attention
 
@@ -75,6 +75,3 @@ To utilize the code:
 2. Replace `"your_data.csv"` with the actual CSV filename and adjust column names.
 3. Execute the script to load data, apply masks, create the model, and generate output.
 
-## Conclusion
-
-By comprehending this comprehensive documentation, you can effectively employ and adapt the provided Transformer model for various NLP tasks. Understanding the core concepts, hyperparameters, and design choices empowers you to create advanced models and make informed modifications to meet the demands of your specific projects.
