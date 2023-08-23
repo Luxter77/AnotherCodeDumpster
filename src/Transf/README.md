@@ -12,8 +12,8 @@ The code leverages TensorFlow and Keras to construct a powerful architecture for
 
 A set of utility functions is provided for fundamental tasks:
 
-| key | value |
-| --- | --- |
+| function | doc |
+| :--- | :--- |
 | `get_angles` | Computes positional encoding angle rates. |
 | `create_padding_mask` | Generates a padding mask to identify padded positions. |
 | `create_look_ahead_mask` | Constructs a look-ahead mask to prevent attending to future positions. |
@@ -59,15 +59,17 @@ Position-wise feed-forward networks contribute to the model's non-linear capacit
 
 The code includes a set of hyperparameters that control the model's behavior:
 
-- `NUM_LAYERS`: Number of layers in the encoder and decoder.
-- `D_MODEL`: Dimensionality of embeddings and hidden layers.
-- `NUM_HEADS`: Number of attention heads in multi-head attention mechanisms.
-- `DFF`: Dimensionality of feed-forward neural networks.
-- `INPUT_VOCAB_SIZE`: Vocabulary size for input sequences.
-- `TARGET_VOCAB_SIZE`: Vocabulary size for target sequences.
-- `DROPOUT_RATE`: Dropout rate applied to various layers.
-- `MAXIMUM_POSITION_ENCODING`: Maximum length of positional encodings.
-- `TARGET_SEQ_LENGTH`: Maximum length of the target sequence.
+| parameter | wdid | default |
+| :--- | :--- | ---: |
+| `NUM_LAYERS` | Number of layers in the encoder and decoder. | 6 |
+| `D_MODEL` | Dimensionality of embeddings and hidden layers. | 512 |
+| `NUM_HEADS` | Number of attention heads in multi-head attention mechanisms. | 8 |
+| `DFF` | Dimensionality of feed-forward neural networks. | 2048 |
+| `INPUT_VOCAB_SIZE` | Vocabulary size for input sequences. | 10000 |
+| `TARGET_VOCAB_SIZE` | Vocabulary size for target sequences. | 8000 |
+| `DROPOUT_RATE` | Dropout rate applied to various layers. | 0.1 |
+| `MAXIMUM_POSITION_ENCODING` | Maximum length of positional encodings. | 10000 |
+| `TARGET_SEQ_LENGTH` | Maximum length of the target sequence. | 50 |
 
 ## Usage
 
