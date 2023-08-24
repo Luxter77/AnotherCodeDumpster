@@ -32,7 +32,7 @@ def main():
     sample_output = sample_transformer(sample_input, sample_target, training=False,
                                     enc_padding_mask=enc_padding_mask,
                                     look_ahead_mask=look_ahead_mask,
-                                    dec_padding_mask=dec_padding_mask
+                                    dec_padding_mask=dec_padding_mask,
                                     cnn_num_filters=CNN_NUM_FILTERS,
                                     cnn_filter_size=CNN_FILTER_SIZE)
 
