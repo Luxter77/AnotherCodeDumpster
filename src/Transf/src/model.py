@@ -427,6 +427,7 @@ class DecoderLayer(tf.keras.layers.Layer):
         Returns:
             tf.Tensor: The output tensor of the decoder layer.
         """
+        # TODO: add visualization for the attention weights
         attn1, attn_weights_block1 = self.multi_head_attention1(
             x, x, x, look_ahead_mask)
         attn1 = self.dropout1(attn1, training=training)
