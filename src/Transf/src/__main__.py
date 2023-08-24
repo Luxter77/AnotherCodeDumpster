@@ -5,7 +5,8 @@ import tensorflow as tf
 from .model import Transformer, create_look_ahead_mask, create_padding_mask
 from .train import (D_MODEL, DFF, DROPOUT_RATE, INPUT_VOCAB_SIZE,
                     MAXIMUM_POSITION_ENCODING, NUM_HEADS, NUM_LAYERS,
-                    TARGET_SEQ_LENGTH, TARGET_VOCAB_SIZE)
+                    TARGET_SEQ_LENGTH, TARGET_VOCAB_SIZE,
+                    CNN_NUM_FILTERS, CNN_FILTER_SIZE)
 
 
 def main():
@@ -31,7 +32,9 @@ def main():
     sample_output = sample_transformer(sample_input, sample_target, training=False,
                                     enc_padding_mask=enc_padding_mask,
                                     look_ahead_mask=look_ahead_mask,
-                                    dec_padding_mask=dec_padding_mask)
+                                    dec_padding_mask=dec_padding_mask
+                                    cnn_num_filters=CNN_NUM_FILTERS,
+                                    cnn_filter_size=CNN_FILTER_SIZE)
 
     print(sample_output)
 
