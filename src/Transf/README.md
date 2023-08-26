@@ -3,7 +3,7 @@
 ![This transformer](transformer.png)
 ## Introduction
 
-This comprehensive documentation offers a detailed exploration of the provided Python code implementing a Transformer model for sequence-to-sequence tasks.
+Implementing a Transformer model for sequence-to-sequence tasks.
 
 The code leverages TensorFlow and Keras to construct a powerful architecture for natural language processing tasks.
 
